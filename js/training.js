@@ -157,29 +157,80 @@
 // console.log();
 // console.log();
 
-function showFirstMessage(text) {
-  console.log(text);
-}
+// function showFirstMessage(text) {
+//   console.log(text);
+// }
 
-showFirstMessage('hello world');
+// showFirstMessage('hello world');
 //После return ничего не задавать == мертвый код
-function calc(a, b){
-  return(a + b);
-}
+// function calc(a, b){
+//   return(a + b);
+// }
 
-console.log(calc(1, 2));
-console.log(calc(1, 12));
+// console.log(calc(1, 2));
+// console.log(calc(1, 12));
 
-function ret(){
-  let num = 50;
-  return num;
-}
+// function ret(){
+//   let num = 50;
+//   return num;
+// }
 
-const anotherNum = ret();
-console.log(anotherNum);
+// const anotherNum = ret();
+// console.log(anotherNum);
 
-const logger = function() {
-  console.log('Hello');
-};
+// const logger = function() {
+//   console.log('Hello');
+// };
 
-logger();
+// logger();
+
+// const calc = (a, b) => {
+//   console.log('1');
+//   return a + b;
+// };
+
+// const usdCurr = 28;
+// const discount = 0.9;
+
+// function convert(amount, curr) {
+//   return curr * amount;
+// }
+
+// function promotion(result) {
+//   console.log(result * discount);
+// }
+
+// const res = convert(500, usdCurr);
+// promotion(res);
+
+// function test() {
+//   for (let i = 0; i < 5; i++){
+//     console.log(i);
+//     if (i === 3) return
+//   }
+//   console.log('done');
+// }
+
+// test();
+
+// function doNothing(){};
+// console.log(doNothing() === undefined);
+
+const str = "teSt";
+const arr = [1, 2, 3];
+
+console.log(str.toLowerCase());
+
+const fruit = "Some fruit";
+
+console.log(fruit.indexOf("fruit"));
+
+const logg = "Hello world";
+
+console.log(logg.slice(6));
+
+const num = 12.2;
+console.log(Math.round(num)); 
+
+const test = "12.2px";
+console.log(parseFloat(test));
