@@ -216,21 +216,204 @@
 // function doNothing(){};
 // console.log(doNothing() === undefined);
 
-const str = "teSt";
-const arr = [1, 2, 3];
+// const str = "teSt";
+// const arr = [1, 2, 3];
 
-console.log(str.toLowerCase());
+// console.log(str.toLowerCase());
 
-const fruit = "Some fruit";
+// const fruit = "Some fruit";
 
-console.log(fruit.indexOf("fruit"));
+// console.log(fruit.indexOf("fruit"));
 
-const logg = "Hello world";
+// const logg = "Hello world";
 
-console.log(logg.slice(6));
+// console.log(logg.slice(6));
 
-const num = 12.2;
-console.log(Math.round(num)); 
+// const num = 12.2;
+// console.log(Math.round(num)); 
 
-const test = "12.2px";
-console.log(parseFloat(test));
+// const test = "12.2px";
+// console.log(parseFloat(test));
+
+
+// function getTimeFromMinutes(minutesTotal) {
+//   if (typeof(minutesTotal) !== 'number' || minutesTotal < 0 || !Number.isInteger(minutesTotal)) {//isInteger проверяет является лм переданное значение целым числом
+//       return "Ошибка, проверьте данные";
+//   }
+
+//   const hours = Math.floor(minutesTotal / 60);
+//   const minutes = minutesTotal % 60;
+
+//   let hoursStr = '';
+
+//   switch (hours) {
+//       case 0: 
+//           hoursStr = 'часов';
+//           break;
+//       case 1:
+//           hoursStr = 'час';
+//           break;
+//       case 2:
+//       case 3:
+//       case 4:
+//           hoursStr = 'часа';
+//           break;
+//       default:
+//           hoursStr = 'часов';
+//   }
+
+//   return console.log(`Это ${hours} ${hoursStr} и ${minutes} минут`);
+// }
+
+
+// getTimeFromMinutes(180);
+
+
+// console.log(Number.isInteger(500));
+// console.log(Number.isInteger(1250));
+// console.log(Number.isInteger(300.2));
+
+// function createCounter() {
+//   let counter = 0;
+
+//   const myFunction = function () {debugger
+//     counter = counter + 1; debugger
+//     return counter; debugger
+//   }
+//   return myFunction;
+// }
+// debugger
+// const increment = createCounter();debugger
+// const c1 = increment(); debugger
+// const c2 = increment(); debugger
+// const c3 = increment(); debugger
+
+// console.log(c1, c2, c3);
+
+// let name = 'John';
+
+// function sayHi() {
+//   console.log('Hi, ' + name);
+// }
+
+// name = "Pete";
+
+// sayHi();
+
+// function makeWorker() {
+//   let name = "Pete";
+
+//   return function() {
+//     console.log(name);
+//   };
+// }
+
+// let name = "John";
+
+// let work = makeWorker();
+
+// work();
+// const result = getSum(5, 6);
+// const getSum = function(a, b){
+//   return a + b;
+// }
+
+
+//6   -----
+//undefined ---- 
+//ошибка ---
+//[3] --
+//1
+//2
+//нет
+//null----
+//да----
+//nan ---/// +infinity 
+//
+
+//И запиеается на лжи
+//ИЛИ запинается на правде
+// let x = 5; console.log( x++ );//вернет 5 так как это постфикс, был бы префикс было бы 6
+
+// [] + false - null + true// Nan
+
+// let y = 1;
+// let x = y = 2;
+// console.log(x); //2 //последовательное присваивание
+
+// console.log([] + 1 + 2);// 12, так как происходит конкотенация к строке
+
+
+// //чему равно
+// console.log(0 || "" || 2 || undefined || true || false);//2 первое true значение
+
+
+// const restorantData = {
+//   menu: [
+//       {
+//           name: 'Salad Caesar',
+//           price: '14$'
+//       },
+//       {
+//           name: 'Pizza Diavola',
+//           price: '9$'
+//       },
+//       {
+//           name: 'Beefsteak',
+//           price: '17$'
+//       },
+//       {
+//           name: 'Napoleon',
+//           price: '7$'
+//       }
+//   ],
+//   waitors: [
+//       {name: 'Alice', age: 22}, {name: 'John', age: 24}
+//   ],
+//   averageLunchPrice: '20$',
+//   openNow: true
+// };
+// ///////////
+// function isOpen(prop) {
+//  let prop = openNow;
+//  prop ? 'Закрыто' : 'Открыто';
+
+//  return openNow;
+// }
+// console.log(isOpen(openNow));
+
+//   let hoursStr = '';
+
+//   switch (hours) {
+//       case 0: 
+//           hoursStr = 'часов';
+//           break;
+//       case 1:
+//           hoursStr = 'час';
+//           break;
+//       case 2:
+//       case 3:
+//       case 4:
+//           hoursStr = 'часа';
+//           break;
+//       default:
+//           hoursStr = 'часов';
+//   }
+
+
+const box = document.getElementById('box');
+console.log(box);
+
+const btns = document.getElementsByTagName('button');
+console.log(btns[1]);
+
+const circles = document.getElementsByClassName('circle');
+console.log(circles);
+
+const hearts = document.querySelectorAll('.heart');
+hearts.forEach(item => {
+  console.log(item);
+});
+
+const oneHeart = document.querySelector('.heart');
+console.log(oneHeart);
